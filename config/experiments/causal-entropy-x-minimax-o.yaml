@@ -1,0 +1,32 @@
+version: 1.0
+
+application:
+  random_seed: 8301
+
+profiles:
+  causal_entropy:
+    type: computer
+    name: Causal Entropy
+    intelligence:
+      type: causal_entropy
+      parameters:
+        horizon: 5
+        temperature: 1.0
+        tie_breaker: random
+
+  minimax:
+    type: computer
+    name: Minimax Baseline
+    intelligence:
+      type: minimax
+      parameters:
+        tie_breaker: deterministic
+
+match:
+  player_1: causal_entropy
+  player_2: minimax
+
+presentation:
+  show_replay: false
+  replay_boards_per_row: 4
+  show_computer_scores: true
