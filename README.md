@@ -36,6 +36,7 @@ As defined by $\mathbf{F} = T \nabla S_\tau$, it prefers moves whose successor s
 - [🎮 Tic-tac-toe - Mathematical Definition](#tic-tac-toe-mathematical-definition)
 - [🗂️ Project Layout](#project-layout)
 - [⚠️ Experiment Limitations](#experiment-limitations)
+- [📜 License](#license)
 
 <br>
 
@@ -571,3 +572,11 @@ so optimal play results in a draw.
 - The causal-entropy strategy intentionally ignores wins, losses, and opponent quality except through future path
   counts.
 - Tic-tac-toe is a small demonstration domain; these results do not establish a general measure of intelligence.
+
+<br>
+
+<a id="license"></a>
+
+## 📜 License
+
+Released under the [MIT License](LICENSE) — Copyright © 2022 Rohin Gosling.
