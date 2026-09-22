@@ -1,0 +1,30 @@
+version: 1.0
+
+application:
+  random_seed: 8102
+
+profiles:
+  random:
+    type: computer
+    name: Random Baseline
+    intelligence:
+      type: random
+
+  causal_entropy:
+    type: computer
+    name: Causal Entropy
+    intelligence:
+      type: causal_entropy
+      parameters:
+        horizon: 5
+        temperature: 1.0
+        tie_breaker: random
+
+match:
+  player_1: random
+  player_2: causal_entropy
+
+presentation:
+  show_replay: false
+  replay_boards_per_row: 4
+  show_computer_scores: true
